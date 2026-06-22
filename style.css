@@ -1,0 +1,118 @@
+:root {
+    --red: #c1121f;
+    --black: #111111;
+    --white: #ffffff;
+    --blue: #003049;
+    --yellow: #fcbf49;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+header {
+    background: var(--black);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--red),
+        var(--blue)
+    );
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.content {
+    padding: 50px 10%;
+}
+
+.content h2 {
+    color: var(--blue);
+    margin-bottom: 20px;
+    border-left: 5px solid var(--red);
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    border-left: 5px solid var(--yellow);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+footer {
+    background: var(--black);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+}
