@@ -40,7 +40,7 @@ backdrop-filter:blur(8px);
 
 .logo img{
 
-height:60px;
+height:30px;
 
 }
 
@@ -383,12 +383,6 @@ gap:25px;
 .hero-content h1{
 
 font-size:3rem;
-
-}
-
-.logo img{
-
-height:100px;
 
 }
 
